@@ -3,13 +3,13 @@
   border: 1px solid black;
   font-family: 'Helvetica';
   width: 280px;
-
 }
 table {
-  border-collapse: collapse;
+  border-collapse: collapse;/*solidify line*/
 }
+
 .invisible {
-  border: 5px solid white;
+  border: 5px solid white; /*border space*/
 }
 h1 {
   margin: 0;
@@ -22,7 +22,7 @@ p {
   height: 10px;
   background-color: black;
 }
-.amount {
+.amount, .calorieTable {
   font-size: .7em;
 }
 tbody tr td{
@@ -38,7 +38,33 @@ tbody tr td{
   border-bottom: none;
 }
 .value {
-text-align: right;
+  text-align: right;
+}
+.indent {
+  padding-left: 10px;
+  border-bottom: 1px solid black;
+  width: 10px;
+}
+.percentage {
+  font-size: .7em;
+  padding-left: 10px;
+}
+.bottomTable tr td, .lastTable tr td{
+  border-bottom: none;
+}
+.bottomHead tr th {
+  border-bottom: 1px solid black;
+  width: 200px;
+}
+#calories {
+  text-align: right;
+}
+.bottomTable tr td:nth-child(3), .bottomTable tr td:nth-child(4) {
+
+  text-align: center;
+}
+ .lastTable tr .child, .lastTable tr td:last-child {
+  text-align: center;
 }
 
 
